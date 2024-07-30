@@ -39,7 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _rating = value;
     });
-    print('Rating changed to: $_rating');
   }
 
   void _incrementCounter() {
@@ -128,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Center(
                               child: Text(
                                 ['M', 'S', 'L', 'XL', '2XL'][index],
-                                style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+                                style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Audiowide'),
                               ),
                             ),
                           ),
@@ -149,12 +148,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Text(
                         "Belgium EURO",
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35),
+                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35, fontFamily: 'Audiowide'),
                       ),
                       SizedBox(height: 5),
                       Text(
                         "B20/21 Away by Adidas",
-                        style: TextStyle(color: Colors.white60, fontWeight: FontWeight.w200, fontSize: 20),
+                        style: TextStyle(color: Colors.white60, fontWeight: FontWeight.w200, fontSize: 20, fontFamily: 'Audiowide'),
                       ),
                     ],
                   ),
@@ -182,6 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.white,
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
+                        fontFamily: 'Audiowide'
                     ),
                   ),
                   SizedBox(width: 50),
@@ -212,6 +212,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.white,
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
+                              fontFamily: 'Audiowide'
                           ),
                         ),
                         SizedBox(width: 10),
@@ -241,9 +242,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text(
                           "Details",
                           style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 19,
                             fontWeight: FontWeight.w300,
                             color: Colors.grey,
+                              fontFamily: 'Audiowide'
                           ),
                         ),
                         RichText(
@@ -252,16 +254,18 @@ class _MyHomePageState extends State<MyHomePage> {
                               TextSpan(
                                 text: 'Material: ',
                                 style: TextStyle(
-                                  fontSize: 22,
+                                  fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                               TextSpan(
                                 text: 'polyester',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 18,
                                   color: Colors.grey,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                             ],
@@ -273,16 +277,18 @@ class _MyHomePageState extends State<MyHomePage> {
                               TextSpan(
                                 text: 'Shipping: ',
                                 style: TextStyle(
-                                  fontSize: 22,
+                                  fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                               TextSpan(
                                 text: 'in 5 to 6 days',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 18,
                                   color: Colors.grey,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                             ],
@@ -294,16 +300,18 @@ class _MyHomePageState extends State<MyHomePage> {
                               TextSpan(
                                 text: 'Returns: ',
                                 style: TextStyle(
-                                  fontSize: 22,
+                                  fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                               TextSpan(
                                 text: 'within 20 days',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 18,
                                   color: Colors.grey,
+                                    fontFamily: 'Audiowide'
                                 ),
                               ),
                             ],
@@ -312,7 +320,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 40),
+                  SizedBox(width: 25),
                   ElevatedButton.icon(
                     onPressed: () {},
                     icon: Icon(Icons.shopping_cart, color: Colors.white),
@@ -321,7 +329,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        fontSize: 25,
+                        fontSize: 20,
+                          fontFamily: 'Audiowide'
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
